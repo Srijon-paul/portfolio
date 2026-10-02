@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap');
+@import "tailwindcss";
+@theme {
+  /* Colors */
+  --color-bg-dark: #080808;
+  --color-text-primary: #F4F4F5; /* Warm/off-white (zinc-100) */
+  --color-text-secondary: #A1A1AA; /* Muted gray (zinc-400) */
+  --color-accent-red: #D91010; /* Deep editorial red */
+  --color-border-subtle: #27272A; /* Subtle dark gray */
+  --color-surface: #121212; /* Slightly lighter than bg for cards/blocks */
+
+  /* Typography */
+  --font-display: "Oswald", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Geometry - Keeping it mostly sharp */
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+}
+
+@layer base {
+
+  body {
+    @apply bg-bg-dark text-text-primary font-sans antialiased selection:bg-accent-red selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-normal uppercase;
+  }
+}
+
+/* Utilities for the design language */
+@layer utilities {
+  .editorial-border {
+    @apply border border-border-subtle;
+  }
+  
+  .editorial-divider {
+    @apply border-b border-border-subtle;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-marquee {
+    animation: marquee 60s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}

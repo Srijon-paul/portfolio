@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#080808"/>
+  
+  <!-- Red Bottom Border -->
+  <rect x="0" y="60" width="64" height="4" fill="#D91010"/>
+  
+  <!-- Top Left Accent -->
+  <polygon points="0,0 16,0 16,4 4,4 4,16 0,16" fill="#D91010"/>
+  
+  <!-- Geometric "S" -->
+  <path d="M 40 18 L 18 18 L 18 32 L 40 32 L 40 46 L 18 46" fill="none" stroke="#F4F4F5" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
+  
+  <!-- Red Dot "." -->
+  <rect x="46" y="39" width="7" height="7" fill="#D91010"/>
+</svg>

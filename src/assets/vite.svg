@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" fill="#080808"/>
+  <!-- Decorative top left corner accent -->
+  <path d="M0 0 H 16 V 4 H 4 V 16 H 0 V 0 Z" fill="#D91010"/>
+  <!-- Typography Monogram -->
+  <text x="32" y="35" font-family="monospace, sans-serif" font-weight="800" font-size="36" fill="#F4F4F5" text-anchor="middle" dominant-baseline="central">S.</text>
+  <!-- Decorative bottom border -->
+  <rect x="0" y="62" width="64" height="2" fill="#D91010"/>
+</svg>
